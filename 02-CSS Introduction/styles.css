@@ -1,0 +1,74 @@
+h1 {
+    color: #0000ff;
+    font-size: 48px;
+}
+
+p {
+    /* line-height: 2.4; */
+} 
+
+.color-green{
+    color: green;
+}
+
+#intro-para{
+    font-weight: bold;
+}
+
+.pseudo-selector{
+    color: aqua;
+}
+
+.pseudo-selector:hover{
+    color: blueviolet;
+}
+
+#intro-para:hover{
+    font-weight: normal;
+}
+
+#child-1 + p{
+    color: blue;
+}
+
+/* div {
+    background-color: pink;
+} */
+
+.top-pist > li {
+    color: orange;
+}
+
+.decantant-selector div p {
+    color: beige;
+}
+
+img[alt] {
+    color: red;
+}
+
+#heading-1{
+    color: red ;
+}
+
+.primary-heading{
+    color: green !important;
+}
+
+.heading-secondary{
+    letter-spacing: 4px;
+    text-transform: uppercase;
+}
+
+.text-aligin-div{
+    text-align: left;
+}
+
+.text-decoration-text{
+    text-decoration: underline;
+}
+
+.bottom-list{
+    /* list-style: none; */
+    list-style-position: inside;
+}
