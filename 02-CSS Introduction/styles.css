@@ -1,3 +1,8 @@
+
+html{
+    font-family: sans-serif;
+}
+
 h1 {
     color: #0000ff;
     font-size: 48px;
@@ -9,6 +14,8 @@ p {
 
 .color-green{
     color: green;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 100;
 }
 
 #intro-para{
@@ -17,6 +24,7 @@ p {
 
 .pseudo-selector{
     color: aqua;
+    font-style: italic;
 }
 
 .pseudo-selector:hover{
@@ -71,4 +79,59 @@ img[alt] {
 .bottom-list{
     /* list-style: none; */
     list-style-position: inside;
+}
+
+.font-size-para{
+    font-size: 24px;
+}
+
+.font-family-ex{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.linear-gradients div {
+    height: 40px;
+    width: 400px;
+    margin-bottom: 40px;
+}
+
+.linear-gradient-1{
+    background-image: linear-gradient(to right, #c5f6fa, #0c8599);
+}
+
+.linear-gradient-2{
+    background-image: linear-gradient(to left, #c5f6fa, #0c8599);
+}
+
+.linear-gradient-3{
+    height: 200px !important;
+    background-image: linear-gradient(to right bottom, #ff8787, #f03e3e, blue);
+}
+
+.radial-gradients div{
+    height: 200px;
+    width: 200px;
+    margin-bottom: 20px;
+}
+
+.radial-gradient-1{
+    background-image: radial-gradient(circle, #74c0fc, #1098ad, #099268);
+}
+
+.conic-gradients div{
+    height: 200px;
+    width: 200px;
+    margin-bottom: 20px;
+}
+
+.conic-gradient-1{
+    background-image: conic-gradient(#74c0fc, #1098ad, #099268, blue);
+}
+
+.conic-gradient-2{
+    background-image: conic-gradient(#3b5bdb 0deg, #3b5bdb 90deg,
+                                    #1098ad 90deg, #1098ad 180deg,
+                                    #f03e3e 180deg, #f03e3e 270deg,
+                                    #0c8599 270deg, #0c8599 360deg);
+
 }
