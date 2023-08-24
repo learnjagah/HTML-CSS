@@ -1,0 +1,48 @@
+.div-1{
+    height: 200px;
+    width: 200px;
+    background-color: red;
+    color: #fff;
+    /* padding: 20px 20px 20px 20px; */
+    padding: 20px 40px;
+    border: 2px solid #000;
+    /* margin-bottom: 40px;
+    margin-left: 40px; */
+    margin: 20px 30px 40px 50px;
+    box-sizing: border-box;
+}
+
+h1 {
+    z-index: 1;
+}
+
+.element-types > span {
+    height: 100px;
+    margin-top: 50px;
+    margin-right: 20px;
+}
+
+.element-types > p {
+    height: 50px;
+}
+
+.inline-element{
+    margin: 40px 60px;
+    display: inline-block;
+}
+
+.relative-position > * {
+    position: relative;
+}
+
+.absolute-position{
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    background-color: #000;
+    top: 20px;
+    /* bottom: 40px; */
+    left: 20px;
+    /* right: 20px; */
+    /* z-index: -200; */
+}
