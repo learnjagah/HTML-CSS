@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: sans-serif;
+    color: #404040;
+}
+
+caption{
+    padding: 18px 0;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Table Primary */
+.table-primary th{
+    text-transform: uppercase;
+}
+
+.table-primary td{
+    text-transform: capitalize;
+}
+
+.table-primary{
+    margin: 30px auto;
+    border-collapse: collapse;
+}
+
+.table-primary td,
+.table-primary th{
+    border:  0.2px solid #868e96;
+    padding: 12px 18px;
+}
+.table-primary thead{
+    background-color: #2b8a3e;
+    color: #fff;
+}
+
+/* Table Secondary */
+.table-secondary{
+    margin: 30px auto;
+    border-collapse: collapse;
+}
+
+.table-secondary th,
+.table-secondary td{
+    padding: 12px 16px;
+    text-align: center;
+}
+
+.table-secondary th{
+    font-weight: normal;
+}
+
+.table-secondary thead {
+    background-color: #404040;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.table-secondary tbody tr:nth-child(even){
+    background-color: #f1f3f5;
+}
+
+.table-secondary tr{
+    border-bottom: 0.2px soild #ced4da;
+}
+
+/* Table Hover */
+
+.table-hover{
+    border-collapse: collapse;
+    margin: 30px auto;
+}
+.table-hover th,
+.table-hover td{
+    padding: 10px 12px;
+    font-size: 14px;
+}
+
+.table-hover thead{
+    background-color: #ced4da;
+    text-transform: uppercase;
+}
+
+.table-hover tbody tr{
+    transition: 0.2s all;
+}
+
+.table-hover tbody tr:hover{
+    background-color: #e9ecef;
+}
+
+/* .table-hover tbody td:hover{
+    background-color: #b9c2cc;
+} */
