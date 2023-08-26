@@ -107,3 +107,22 @@ div{
 .btn-link-danger:active{
     background-color: #e67700;
 }
+
+/* btn-download */
+
+.btn-download{
+    border: none;
+    padding: 16px 48px;
+    background-color: #1c7ed6;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.btn-download:hover{
+    background-color: #2b8a3e;
+}
+
+.fa{
+    margin-right: 10px;
+}
