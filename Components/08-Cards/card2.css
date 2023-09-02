@@ -1,0 +1,171 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+html{
+    color: #404040;
+    font-family: sans-serif;
+}
+
+.container{
+    width: 70vw;
+    margin: 0 auto;
+    margin-top: 80px;
+    display: flex;
+    gap: 50px;
+}
+
+.card{
+    width: 300px;
+    color: #fff;
+    box-shadow: 0 2px 6px rgba(64, 64, 64, 0.2);
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+.card:hover{
+    transform: translateY(-20px) scale(1.05);
+}
+
+.card-basic{
+    background-image: linear-gradient(to right bottom, #c92a2a, #c92a2a);
+}
+
+.card-header{
+    text-align: center;
+    padding: 20px;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+.card-basic .card-price{
+    background-color: #e03131;
+}
+
+.card-price{
+    text-align: center;
+    padding: 12px 0;
+    color: #f8f9fa;
+}
+
+.price{
+    font-size: 24px;
+}
+
+.price-duration{
+    font-weight: 100;
+}
+
+.currency-sybmol{
+    font-weight: 100;
+    font-size: 18px;
+}
+
+/* Card features */
+
+.card-features{
+    background-color: #fff;
+    color: #495057;
+    padding: 20px 24px 10px 24px;
+}
+
+.card ul li{
+    list-style: none;
+}
+
+.list-item{
+    display: flex;
+    justify-content: space-between;
+}
+
+.fa-success{
+    color: #2b8a3e;
+}
+
+.fa-error{
+    color: #c92a2a; 
+}
+
+.fa-hand-o-right{
+    margin-right: 10px;
+}
+
+.card-features-list{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.card-body{
+    background-color: #fff;
+}
+
+.card-cta{
+    text-align: center;
+    padding: 24px;
+}
+
+.btn-cta:link,
+.btn-cta:visited{
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+    border: 1px solid currentColor;
+    padding: 10px 12px;
+    border-radius: 5px;
+    transition: all 0.3s;
+}
+
+
+.btn-cta:hover,
+.btn-cta:active{
+    
+}
+
+.card-footer{
+    padding: 24px;
+}
+
+.btn-cta-basic{
+    color: #c92a2a
+}
+
+.btn-cta-basic:hover{
+    color: #fff;
+    background-color: #c92a2a;
+}
+
+.card-application{
+    background-image: linear-gradient(to right bottom, #1864ab, #1864ab);
+}
+
+.card-price{
+    background-color: #1c7ed6;
+}
+
+.btn-cta-application:hover{
+    background-color: #1864ab;
+    color: #fff;
+}
+
+.card-corporate{
+    background-image: linear-gradient(to right bottom, #2b8a3e, #2b8a3e);
+}
+
+.card-corporate .card-price{
+    background-color: #2f9e44;
+}
+
+.btn-cta-corporate{
+    color: #2b8a3e;
+}
+
+.btn-cta-corporate:hover{
+    background-color: #2b8a3e;
+    color: #fff;
+}
