@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carousel</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="slider-wrapper">
+            <div class="slider">
+                <!-- Slide 1 -->
+                <div class="slide">
+                    <h1 class="slide-heading">What is HTML?</h1>
+                    <div class="slide-content">
+                        <img src="./assets/html.png" alt="HTMl Sample Code" class="slide-img">
+                        <div class="slide-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam hic, laborum, magnam deserunt fuga molestiae quasi ipsam delectus laboriosam doloribus ab dolore ea sed doloremque ducimus neque architecto error dicta.</div>
+                    </div>
+                </div>
+
+                <!-- Slide 2 -->
+                <div class="slide">
+                    <h1 class="slide-heading">What is CSS?</h1>
+                    <div class="slide-content">
+                        <img src="./assets/css.png" alt="HTMl CSS Code" class="slide-img">
+                        <div class="slide-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam hic, laborum, magnam deserunt fuga molestiae quasi ipsam delectus laboriosam doloribus ab dolore ea sed doloremque ducimus neque architecto error dicta.</div>
+                    </div>
+                </div>
+
+                <!-- Slide 3 -->
+                <div class="slide">
+                    <h1 class="slide-heading">What is JS?</h1>
+                    <div class="slide-content">
+                        <img src="./assets/js.png" alt="Sample JS Code" class="slide-img">
+                        <div class="slide-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam hic, laborum, magnam deserunt fuga molestiae quasi ipsam delectus laboriosam doloribus ab dolore ea sed doloremque ducimus neque architecto error dicta.</div>
+                    </div>
+                </div>
+            </div>
+
+            <button class="slide-btn slide-btn-left" onclick="prevSlide()">
+                <span>
+                    <i class="fa fa-chevron-left" aria-hidden="true"></i>
+                </span>
+            </button>
+
+            <button class="slide-btn slide-btn-right" onclick="nextSlide()">
+                <span>
+                    <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                </span>
+            </button>
+        </div>
+    </div>
+
+    <script>
+    </script>
+</body>
+</html>
