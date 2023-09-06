@@ -1,0 +1,136 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    color: #404040;
+    font-family: 'Inter', sans-serif;
+    font-size: 62.5%;
+}
+
+:root{
+    --primary-color: #1746A2;
+    --secondary-color: #5F9DF7;
+    --color-grey: #331D2C;
+    --color-light:#FFFFFF;
+    --color-dark: #1864ab;
+    --color-grey-light:#555;
+}
+
+/* A4 Paper */
+.a4-paper{
+    width: 21cm;
+    height: 29.7cm;
+    margin: 0 auto;
+    border: 1px dashed #555;
+    background-color: var(--color-light);
+}
+
+.page-1{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+.grid-1{
+    display: grid;
+    gap: 1.4rem;
+}
+
+.margin-right-m{
+    margin-right: 2.4rem;
+}
+/* Title Section */
+
+.career-info{
+    padding: 4rem 3rem 4rem 6rem;
+    display: grid;
+    gap: 2.4rem;
+    grid-template-rows: min-content min-content min-content;
+}
+.heading-primary{
+    font-size: 600;
+    text-transform: uppercase;
+    font-size: 3.2rem;
+    letter-spacing: 2px;
+}
+
+.heading-secondary{
+    font-size: 1.6rem;
+    letter-spacing: 1px;
+    line-height: 1;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+p{
+    font-size: 1.2rem;
+    text-align: justify;
+}
+
+.title-section{
+    display: grid;
+    gap: 1.6rem;
+    grid-template-columns: 1fr;
+}
+
+.title-section .heading-secondary{
+    line-height: 1.6;
+}
+
+.heading-dark::after{
+    content: '';
+    display: inline-block;
+    height: 2px;
+    width: 100%;
+    background-color: currentColor;
+}
+
+/* Education Section */
+.education-section{
+    grid-template-rows: min-content;
+}
+
+.year{
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+}
+
+.duration{
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+}
+
+.detail{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    column-gap: 2.4rem;
+    align-items: flex-start;
+}
+
+.detail-text-box{
+    display: grid;
+    gap: 1rem;
+}
+
+.heading-tertiary{
+    font-size: 1.4rem;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.heading-fourth{
+    font-size: 1.2rem;
+    font-weight: 400;
+    text-transform: capitalize;
+}
+
+.detail-text-box::after{
+    content: '';
+    height: 1px;
+    background-color: currentColor;
+    display: inline-block;
+    width: 100%;
+}
