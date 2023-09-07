@@ -19,6 +19,10 @@ html{
     --color-grey-light:#555;
 }
 
+.fa{
+    margin-right: 8px;
+}
+
 /* A4 Paper */
 .a4-paper{
     width: 21cm;
@@ -47,13 +51,17 @@ html{
     padding: 4rem 3rem 4rem 6rem;
     display: grid;
     gap: 2.4rem;
-    grid-template-rows: min-content min-content min-content;
+    grid-template-rows: min-content min-content min-content min-content;
 }
 .heading-primary{
     font-size: 600;
     text-transform: uppercase;
     font-size: 3.2rem;
     letter-spacing: 2px;
+}
+
+.text-uppercase{
+    text-transform: uppercase;
 }
 
 .heading-secondary{
@@ -79,12 +87,17 @@ p{
     line-height: 1.6;
 }
 
-.heading-dark::after{
+.heading-dark::after,
+.heading-light::after{
     content: '';
     display: inline-block;
     height: 2px;
     width: 100%;
     background-color: currentColor;
+}
+
+.heading-light::after{
+    height: 1px;
 }
 
 /* Education Section */
@@ -133,4 +146,82 @@ p{
     background-color: currentColor;
     display: inline-block;
     width: 100%;
+}
+
+/* Internship Details */
+.internship-detail{
+    display: grid;
+    gap: 5px;
+}
+
+.detail-list{
+    padding: 10px 0 0 24px;
+}
+
+.detail-list-item{
+    list-style: disc;
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+/* Personal info Section */
+
+.personal-info{
+    background-color: var(--primary-color);
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: min-content;
+    padding: 2.4rem 2rem;
+    gap: 4rem;
+    color: var(--color-light);
+    font-size: 1.4rem;
+}
+
+.candidate-photo{
+    width: 70%;
+    display: inline-block;
+    border-radius: 1800px;
+    border: 6px solid var(--secondary-color);
+}
+
+.photo-box{
+    height: 18rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.flex-box-1{
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+.common-icon-m{
+    font-size: 2rem;
+    width: 2rem;
+    text-align: center;
+    display: inline-block;
+}
+
+.flex-box-1-text{
+    font-size: 1.4rem;
+}
+
+/* Skills*/
+.list-item{
+    list-style: none;
+    background-color: var(--color-dark);
+    display: inline-block;
+    border-radius: 8px;
+    border: 0.1px solid var(--color-light);
+    padding: 8px 14px;
+}
+
+.list-block{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.4rem;
+    padding: 2rem 0;
+    font-size: 1.4rem;
 }
