@@ -1,0 +1,251 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html{
+    font-size: 62.5%;;
+}
+
+.mb-l{
+    margin-bottom: 3.2rem;
+}
+
+.mb-m{
+    margin-bottom: 2.4rem;
+}
+
+.center-div{
+    margin: 0 auto;
+}
+/* Header */
+.header{
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(22,75, 96, 0.8), rgba(22,75, 96, 0.8)) ,url(assets/hero-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.8rem 3rem;
+}
+
+.logo{
+    width: 36rem;
+}
+
+.nav-links{
+    display: flex;
+    gap: 2rem;
+}
+
+.nav-links li{
+    list-style: none;
+}
+
+.nav-link:link,
+.nav-link:visited{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    transition: all 0.9s;
+    padding: 1rem 2.4rem;
+    letter-spacing: 1px;
+    font-size: 1.6rem;
+    border-radius: 1500px;
+}
+
+.nav-link:hover,
+.nav-link:active{
+    background-color: #164b60;
+}
+
+.content-box{
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.heading-hero{
+    font-size: 4.2rem;
+    text-transform: uppercase;
+}
+
+.hero-text{
+    font-size: 1.6rem;
+    font-weight: 300;
+    width: 80%;
+}
+
+.hero-cta:link,
+.hero-cta:visited{
+    text-decoration: none;
+    padding: 1.2rem 4.8rem;
+    font-size: 1.8rem;
+    border: 1px solid #fff;
+    color: #fff4f4;
+    display: inline-block;
+    border-radius: 6px;
+    background-color: rgb(22, 75, 96, 0.8);
+    transition: all 0.2s;
+    font-weight: 300;
+}
+
+.hero-cta:hover,
+.hero-cta:active{
+    background-color: #7e1717;
+    transform: scale(0.9);
+    /* transform: translateY(20px); */
+}
+
+/* Affiliations */
+
+.grid-3{
+    display: grid;
+    grid-template-columns: repeat(3, minmax(24rem, min-content));
+    gap: 6rem;
+    row-gap: 4.8rem;
+    justify-content: center;
+    justify-items: center;
+}
+
+.section-affiliations{
+    padding: 4.8rem 6rem;
+    background-color: #f6f1f1;
+}
+
+
+.affiliation-img{
+    width: 16rem;
+}
+
+.affiliation-heading{
+    text-align: center;
+    font-size: 1.8rem;
+    color: #333;
+}
+
+.heading-secondary{
+    text-transform: uppercase;
+    font-size: 2.8rem;
+    text-align: center;
+    font-size: 500;
+    letter-spacing: 1px;
+}
+
+/* educational Programs */
+.education-program{
+    padding: 2rem 4.8rem;
+    min-height: 100vh;
+}
+
+.course-img{
+    display: block;
+    width: 100%;
+    height: 18rem;
+}
+
+.course-text-box{
+    padding: 1.4rem;
+}
+
+.couse-title{
+    font-size: 1.4rem;
+}
+
+.heading-fourth{
+    font-size: 1.8rem;
+}
+
+.course-card-side{
+    box-shadow: 0 2px 6px rgba(51, 51, 51, 0.7);
+    border-radius: 8px;
+    overflow: hidden;
+}
+.course-card{
+    cursor: pointer;
+    position: relative;
+    height: 26rem;
+    width: 23rem;
+}
+
+.course-card-front{
+    color: #fff;
+    background-color: #164b60;
+}
+
+.course-card-back,
+.course-card-front{
+    height: 26rem;
+    width: 23rem;
+    position: absolute !important;
+    top: 0;
+    left: 0;
+    backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    transition: all 0.6s;
+}
+
+.course-card-back span{
+    display: block;
+}
+
+.course-card-back{
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    transform: rotateY(-180deg);
+}
+.title{
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    color: #666;
+}
+
+.value{
+    font-size: 2rem;
+    color: #164b60;
+}
+
+.fee{
+    font-size: 2.2rem;
+    color: #164b60;
+}
+
+.course-card:hover .course-card-front{
+    transform: rotateY(-180deg);
+}
+.course-card:hover .course-card-back{
+    transform: rotateY(0deg);
+}
+
+.cta-box{
+    text-align: center;
+}
+
+/* Primary CTA */
+.primary-cta:link,
+.primary-cta:visited{
+    font-size: 1.4rem;
+    text-decoration: none;
+    display: inline-block;
+    background-color: #164b60;
+    color: #fff;
+    padding: 1.2rem 2.4rem;
+    border-radius: 4px;
+    transition: all 0.2s;
+}
+
+.primary-cta:hover,
+.primary-cta:active{
+    transform: scale(1.2);
+}
