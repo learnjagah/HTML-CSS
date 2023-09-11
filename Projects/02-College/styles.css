@@ -17,6 +17,10 @@ html{
     margin-bottom: 2.4rem;
 }
 
+.mt-l{
+    margin-top: 3.2rem;
+}
+
 .center-div{
     margin: 0 auto;
 }
@@ -191,7 +195,7 @@ html{
     left: 0;
     backface-visibility: hidden;
     -moz-backface-visibility: hidden;
-    transition: all 0.6s;
+    transition: all 0.8s;
 }
 
 .course-card-back span{
@@ -248,4 +252,136 @@ html{
 .primary-cta:hover,
 .primary-cta:active{
     transform: scale(1.2);
+}
+
+/* Placement Partners */
+.placement-partners{
+    background-color: #f6f1f1;
+    padding: 8rem 3.2rem;
+}
+
+.grid-4{
+    width: 80%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    gap: 6rem;
+}
+
+.brand-container img{
+    width: 18rem;
+}
+
+/* Students Placed */
+
+.placed-students{
+    padding: 6rem 3.2rem;
+}
+
+.student-placed-img{
+    height: 10rem;
+    display: block;
+    margin: 0 auto;
+}
+
+.student-placed-img-box{
+    width: 10rem;
+    height: 10rem;
+    overflow: hidden;
+    border-radius: 1600px;
+}
+
+.student-placed{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    align-items: center;
+    justify-items: center;
+    padding: 1.8rem 1.2rem;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.4s;
+}
+
+.student-placed:hover{
+    box-shadow: 0 2px 4px rgba(22, 75, 96, 0.7);
+    transform: scale(1.2); 
+}
+
+.placement-detail{
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.student-placed-text-box{
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+.student-placed-title{
+    font-size: 1.4rem;
+    text-align: center;
+    text-transform: uppercase;
+    color: #526D82;
+}
+
+.placed-lpa{
+    font-size: 1.8rem;
+    color: #164b60;
+}
+
+.placed-company{
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.cta-secondary:link,
+.cta-secondary:visited{
+    display: inline-block;
+    text-decoration: none;
+    font-size: 1.4rem;
+    font-weight: 300;
+    line-height: 1;
+    padding: 1.2rem 2rem;
+    border-bottom: 2px solid #164b60;
+    transition: all 0.5s;
+}
+
+.cta-secondary:active,
+.cta-secondary:hover{
+    color: #fff;
+    background-color: #164b60;
+}
+
+/* Achievments */
+
+.achievments{
+    padding: 6rem 3.2rem;
+    background-color: #164b60;
+    color: #f6f1f1;
+}
+
+.achievment-box{
+    padding: 1.2rem;
+}
+
+.achievment-count{
+    font-size: 4.2rem;
+    margin-bottom: 1.8rem;
+    text-align: center;
+    color: #f7e6c4;
+}
+
+.achievment-text{
+    font-size: 1.6rem;
+    text-align: center;
+    color: #9db2bf;
+    letter-spacing: 1px;
 }
