@@ -570,3 +570,144 @@ html{
     background-color: #bb1818;
     color: #f6f1f1;
 }
+
+/* Media Queries */
+
+@media (max-width: 87em){
+    html{
+        font-size: 60%;
+    }
+
+    .nav-links{
+        gap: 1rem;
+    }
+
+    .nav-link:link, .nav-link:visited{
+        padding: 1rem 1.4rem;
+    }
+
+}
+
+/* 1200px */
+@media (max-width: 75em){
+    html{
+        font-size: 52.65%;
+    }
+    .heading-hero{
+        font-size: 3.6rem;
+    }
+    .hero-text{
+        font-size: 1.4rem;
+    }
+
+    .logo{
+        width: 30rem;
+    }
+    .nav{
+        padding: 2rem 3rem;
+    }
+
+    .reach-us{
+        justify-self: left;
+    }
+
+    .brand-container img{
+        width: 14rem;
+    }
+}
+
+@media (max-width: 59em){
+    html{
+        font-size: 50%;
+    }
+
+    .nav{
+        flex-direction: column;
+        gap: 1.8rem;
+        padding: 3.2rem;
+    }
+
+    .grid-2{
+        grid-template-columns: 0.6fr;
+        justify-content: space-around;
+    }
+}
+
+/* 863px */
+@media (max-width: 53em){
+    .logo{
+        width: 24rem;
+    }
+    .nav-links{
+        gap: 0.6rem;
+    }
+
+    .nav-link{
+        padding: 1rem;
+        font-size: 1.4rem;
+    }
+    .hero-text{
+        font-size: 1.2rem;
+    }
+
+    .grid-4{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .grid-2{
+        grid-template-columns: 0.8fr;
+        justify-content: center;
+        justify-items: center;
+    }
+
+    .education-program{
+        padding: 6rem 2rem;
+    }
+
+    .content-box{
+        top: 50%;
+        width: 80%;
+        text-align: center;
+    }
+
+    .hero-text{
+        width: 100%;
+        text-align: center;
+    }
+
+    .reach-us{
+        justify-self: center;
+    }
+}
+
+/* 704px */
+@media (max-width:44em){
+    .grid-3{
+        grid-template-columns: repeat(2, minmax(24rem, min-content));
+    }
+
+    .staff-content{
+        flex-direction: column;
+    }
+    .staff-text{
+        text-align: justify;
+    }
+
+    .heading-hero{
+        font-size: 4.2rem;
+    }
+
+    .hero-text{
+        font-size: 1.6rem;
+        margin-bottom: 3.2rem;
+    }
+
+}
+
+@media (max-width: 34em){
+
+}
+
+@media (max-width:1em){
+
+}
