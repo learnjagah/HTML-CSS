@@ -24,6 +24,14 @@ html{
 .center-div{
     margin: 0 auto;
 }
+
+.nav-links{
+    display: block;
+}
+
+.menu-icon{
+    display: none;
+}
 /* Header */
 .header{
     height: 100vh;
@@ -614,6 +622,10 @@ html{
     .brand-container img{
         width: 14rem;
     }
+
+    .education-program{
+        min-height: unset
+    }
 }
 
 @media (max-width: 59em){
@@ -702,12 +714,167 @@ html{
         margin-bottom: 3.2rem;
     }
 
+    
+
 }
 
 @media (max-width: 34em){
+    .nav-links{
+        display: none;
+    }
 
+    .menu-icon{
+        display: block;
+    }
+
+    .nav{
+        flex-direction: row;
+    }
+    .grid-3{
+        grid-template-columns: repeat(1, minmax(24rem, min-content));
+    }
+
+    .grid-4{
+        grid-template-columns: 1fr;
+    }
+
+    .staff-content{
+        gap: 1.4rem;
+    }
+
+    .course-img{
+        height: 28rem;
+        width: 34rem;
+    }
+    .course-card,
+    .course-card-side{
+        width: 32rem;
+        height: 38rem;
+    }
+
+    .heading-fourth{
+        font-size: 2.4rem;
+    }
+
+    .student-placed-img{
+        height: 14rem;
+    }
+
+    .student-placed-img-box{
+        height: 14rem;
+        width: 14rem;
+    }
+
+    .student-placed-title{
+        font-size: 2rem;
+    }
+
+    .student-placed{
+        padding: 2rem;
+    }
+
+    .student-placed-text-box{
+        gap: 0;
+    }
+
+    .nav-links{
+        display: none;
+    }
 }
+
+
+@media (max-width: 38em){
+    .heading-hero{
+        font-size: 2.4rem;
+    }
+}
+
 
 @media (max-width:1em){
 
+}
+
+/* Mobile Links */
+.mobile-nav-links{
+    display: none;
+}
+
+.show-mobile-nav{
+    display: none;
+}
+
+.show-mobile-nav-label,
+.show-mobile-nav-label::after,
+.show-mobile-nav-label::before{
+    content: '';
+    display: inline-block;
+    width: 4.8rem;
+    height: 2px;
+    background-color: #fff;
+    position: relative;
+    z-index: 500;
+}
+
+.show-mobile-nav-label::after,
+.show-mobile-nav-label::before{
+    position: absolute;
+    top: -8px;
+    transition: all 0.3s;
+}
+
+.show-mobile-nav-label::after{
+    top: 8px;
+}
+
+.show-mobile-nav:checked ~ .mobile-nav-links{
+    display: flex;
+}
+
+.mobile-nav-links{
+    display: none;
+}
+
+.mobile-nav-links{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background-color: #164b60;
+    z-index: 430;
+    padding: 2.rem;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+
+.mobile-nav-link:link,
+.mobile-nav-link:visited{
+    font-size: 3.2rem;
+    text-decoration: none;
+    text-align: center;
+    color: #fff;
+    line-height: 2.4;
+    display: block;
+    font-weight: 300;
+}
+
+.mobile-links{
+    list-style: none;
+}
+
+.show-mobile-nav:checked ~ .show-mobile-nav-label {
+    background-color: transparent;
+}
+
+.show-mobile-nav:checked ~ .show-mobile-nav-label::after{
+    top:0;
+    transform: rotate(135deg);
+    background-color: #aaa;
+}
+
+.show-mobile-nav:checked ~ .show-mobile-nav-label::before{
+    top:0;
+    transform: rotate(-135deg);
+    background-color: #aaa;
 }
